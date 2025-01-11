@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en" data-sidebar-color="light" data-topbar-color="light" data-sidebar-view="default">
+
+<head>
+    <meta charset="utf-8">
+    <title>Table | TailFox - Responsive Tailwind Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="MyraStudio" name="author">
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/theme.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet">
+
+    <!-- Head Js -->
+    <script src="assets/js/head.js"></script>
+</head>
+
+<body>
+
+    <div class="app-wrapper">
+
+        <!-- Sidebar Menu Start -->
+        <div class="app-menu">
+
+            <!-- Brand Logo -->
+            <a href="index.html" class="logo-box">
+                <img src="assets/images/logo-light.png" class="logo-light h-6" alt="Light logo">
+                <img src="assets/images/logo-dark.png" class="logo-dark h-6" alt="Dark logo">
+            </a>
+
+            <!--- Menu -->
+            <div data-simplebar>
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="index.html" class="menu-link">
+                            <span class="menu-icon"><i class="uil uil-estate"></i></span>
+                            <span class="menu-text"> Dashboard </span>
+                        </a>
+                    </li>
+            
+                    <!-- Animals -->
+                    <li class="menu-item">
+                        <a href="animals.html" class="menu-link">
+                            <span class="menu-icon"><i class="uil uil-plus-circle"></i></span>
+                            <span class="menu-text">Animals</span>  
+                        </a>
+                    </li>
+
+                    <!-- Elements -->
+                    <!-- <li class="menu-title">Elements</li>
+
+                    <li class="menu-item">
+                        <a href="ui-components.html" class="menu-link">
+                            <span class="menu-icon"><i class="uil uil-apps"></i></span>
+                            <span class="menu-text"> Components </span>
+                        </a>
+                    </li>
+            
+
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" data-hs-collapse="#sidenavForms" class="menu-link">
+                            <span class="menu-icon"><i class="uil uil-file-alt"></i></span>
+                            <span class="menu-text"> Forms </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+
+                        <ul id="sidenavForms" class="sub-menu hidden">
+                            <li class="menu-item">
+                                <a href="forms-elements.html" class="menu-link">
+                                    <span class="menu-dot"></span>
+                                    <span class="menu-text">Form Elements</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="forms-masks.html" class="menu-link">
+                                    <span class="menu-dot"></span>
+                                    <span class="menu-text">Masks</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="forms-editor.html" class="menu-link">
+                                    <span class="menu-dot"></span>
+                                    <span class="menu-text">Editor</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="forms-validation.html" class="menu-link">
+                                    <span class="menu-dot"></span>
+                                    <span class="menu-text">Validation</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="forms-layout.html" class="menu-link">
+                                    <span class="menu-dot"></span>
+                                    <span class="menu-text">Form Layout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>            
+
+
+                    <li class="menu-item">
+                        <a href="tables-basic.html" class="menu-link">
+                            <span class="menu-icon"><i class="uil uil-th"></i></span>
+                            <span class="menu-text"> Tables </span>
+                        </a>
+                    </li>
+
+                </ul> -->
+            </div>
+        </div>
+        <!-- Sidebar Menu End  -->
+
+        <!-- Start PTitle Content here -->
+        <div class="app-content">
+
+            <!-- Topbar Start -->
+            <header class="app-header flex items-center px-5 gap-4">
+
+                <!-- Brand Logo -->
+                <a href="index.html" class="logo-box">
+                    <img src="assets/images/logo-sm.png" class="h-6" alt="Small logo">
+                </a>
+
+                <!-- Sidenav Menu Toggle Button -->
+                <button id="button-toggle-menu" class="nav-link p-2">
+                    <span class="sr-only">Menu Toggle Button</span>
+                    <span class="flex items-center justify-center h-6 w-6">
+                        <i class="uil uil-bars text-2xl"></i>
+                    </span>
+                </button>
+
+                <!-- Page Title -->
+                <h4 class="text-slate-900 text-lg font-medium">Animals Add</h4>
+
+                <button id="button-toggle-profile" class="nav-link p-2 ms-auto">
+                    <span class="sr-only">Profile Menu Offcanvas Button</span>
+                    <span class="flex items-center justify-center h-6 w-6">
+                        <i class="uil uil-heart-rate text-2xl"></i>
+                    </span>
+                </button>
+            </header>
+            <!-- Topbar End -->
+
+            <main class="p-6">
+
+                <div class="card">
+                    <div>
+                        <!-- Tabs Navigation -->
+                        <nav class="flex flex-wrap items-center justify-around bg-gray-100 p-3 gap-2" aria-label="Tabs"
+                            role="tablist">
+                            <button type="button"
+                                class="hs-tab-active:-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700 active"
+                                id="tabs-item-1" data-hs-tab="#tabs-1" aria-controls="tabs-1" role="tab">
+                                Animal Details
+                            </button>
+                            <button type="button"
+                                class="hs-tab-active:-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
+                                id="tabs-item-2" data-hs-tab="#tabs-2" aria-controls="tabs-2" role="tab">
+                                Farm Entry
+                            </button>
+                            <button type="button"
+                                class="hs-tab-active:-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
+                                id="tabs-item-3" data-hs-tab="#tabs-3" aria-controls="tabs-3" role="tab">
+                                Tag
+                            </button>
+                            <button type="button"
+                                class="hs-tab-active:-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
+                                id="tabs-item-4" data-hs-tab="#tabs-4" aria-controls="tabs-4" role="tab">
+                                Management Group
+                            </button>
+                            <button type="button"
+                                class="hs-tab-active:-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
+                                id="tabs-item-5" data-hs-tab="#tabs-5" aria-controls="tabs-5" role="tab">
+                                Weight
+                            </button>
+                            <button type="button"
+                                class="hs-tab-active:-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
+                                id="tabs-item-6" data-hs-tab="#tabs-6" aria-controls="tabs-6" role="tab">
+                                Conditional Score
+                            </button>
+                            <button type="button"
+                                class="hs-tab-active:-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
+                                id="tabs-item-7" data-hs-tab="#tabs-7" aria-controls="tabs-7" role="tab">
+                                Movement
+                            </button>
+                        </nav>
+
+                        <!-- Tabs Content -->
+                        <div class="mt-3 overflow-hidden">
+                            <!-- Tab 1 Content -->
+                            <div id="tabs-1" class="hidden transition-all duration-300 transform" role="tabpanel"
+                                aria-labelledby="tabs-item-1">
+
+                                <div class="card border-none">
+                                    <div class="card-header">
+                                        <h4 class="card-title text-primary ">Animal Details</h4>
+                                    </div>
+                                    <div class="card-body p-6">
+                                        <form action="#" class="space-y-5">
+                                            <!-- Animal Details  Section -->
+                                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                                <!-- Species -->
+                                                <div>
+                                                    <label class="text-gray-800 text-sm font-medium inline-block mb-2">Species *</label>
+                                                    <div class="flex items-center gap-2">
+                                                        <div class="form-check">
+                                                            <input type="radio" class="form-radio text-primary"
+                                                                name="formRadio" id="formRadio01" checked="">
+                                                            <label class="ml-2" for="formRadio01">Cattle</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input type="radio" class="form-radio text-primary"
+                                                                name="formRadio" id="formRadio02">
+                                                            <label class="ml-2" for="formRadio02">Sheep</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Breed -->
+                                                <div>
+                                                    <label for="breed"
+                                                        class="text-gray-800 text-sm font-medium inline-block mb-2">Breed</label>
+                                                    <select id="breed" name="breed" required class="form-select cursor-pointer">
+                                                        <option value="">Make a selection</option>
+                                                        <option value="breed1">Breed 1</option>
+                                                        <option value="breed2">Breed 2</option>ٖ
+                                                    </select>
+                                                </div>
+
+                                                <!-- Age Class -->
+                                                <div>
+                                                    <label for="breed"
+                                                        class="text-gray-800 text-sm font-medium inline-block mb-2">Age
+                                                        Class</label>
+                                                    <select id="age-class" name="age-class" required class="form-select cursor-pointer">
+                                                        <option value="">Make a selection</option>
+                                                        <option value="young">Young</option>
+                                                        <option value="adult">Adult</option>
+                                                    </select>
+                                                </div>
+
+                                                <!-- Date of Birth -->
+                                                <div>
+                                                    <label for=""
+                                                        class="text-gray-800 text-sm font-medium inline-block mb-2">Date of Birth *</label>
+                                                    <p class="mb-2">Select a day, month, or year of birth for your animal.</p>
+                                                    <div class="flex items-center gap-2 mb-2">
+                                                        <label><input type="radio" name="dob-option" class="form-radio text-primary value="day"> Day</label>
+                                                        <label><input type="radio" name="dob-option" class="form-radio text-primary value="month"> Month</label>
+                                                        <label><input type="radio" name="dob-option" class="form-radio text-primary value="year" checked> Year</label>
+                                                        <label><input type="radio" name="dob-option" class="form-radio text-primary value="not-track"> Do not track</label>
+                                                    </div>
+                                                    <input type="date" name="dob" id="dob" class="form-input">
+                                                </div>
+
+                                                 <!-- Hide Color -->
+                                                <div>
+                                                    <label for="hide-color"
+                                                        class="text-gray-800 text-sm font-medium inline-block mb-2">Hide Color</label>
+                                                    <select id="hide-color" name="hide-color" required class="form-select cursor-pointer">
+                                                        <option value="">Make a selection</option>
+                                                        <option value="color1">Color 1</option>
+                                                        <option value="color2">Color 2</option>
+                                                    </select>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <!-- Identification Section -->
+                                            <div class="card">
+                                                <div class="card-header bg-slate-200">
+                                                    <h5 class="card-title text-blue-950 ">Identification</h5>
+                                                </div>
+                                                <div class="card-body p-6">
+                                                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                                        <!-- Name -->
+                                                        <div>
+                                                            <label class="text-gray-800 text-sm font-medium inline-block mb-2">Name</label>
+                                                            <input type="text" id="" placeholder="Name" class="form-input">
+                                                        </div>
+                                                        <!-- Tatto -->
+                                                        <div>
+                                                            <label class="text-gray-800 text-sm font-medium inline-block mb-2">Tatto</label>
+                                                            <input type="text" id="" placeholder="Tatto" class="form-input">
+                                                        </div>
+                                                        <!-- Brand -->
+                                                        <div>
+                                                            <label class="text-gray-800 text-sm font-medium inline-block mb-2">Brand</label>
+                                                            <input type="text" id="" placeholder="Brand" class="form-input">
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Percentage Section -->
+                                            <div class="card">
+                                                <div class="card-header bg-slate-200">
+                                                    <h5 class="card-title text-blue-950 ">Percentage</h5>
+                                                </div>
+                                                <div class="card-body p-6">
+                                                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                                        <!-- Name -->
+                                                        <div>
+                                                            <label class="text-gray-800 text-sm font-medium inline-block mb-2">Name</label>
+                                                            <input type="text" id="" placeholder="Name" class="form-input">
+                                                        </div>
+                                                        <!-- Tatto -->
+                                                        <div>
+                                                            <label class="text-gray-800 text-sm font-medium inline-block mb-2">Tatto</label>
+                                                            <input type="text" id="" placeholder="Tatto" class="form-input">
+                                                        </div>
+                                                        <!-- Brand -->
+                                                        <div>
+                                                            <label class="text-gray-800 text-sm font-medium inline-block mb-2">Brand</label>
+                                                            <input type="text" id="" placeholder="Brand" class="form-input">
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Save Button -->
+                                            <div class="mt-5">
+                                                <button type="submit" class="btn bg-primary text-white">Save</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Tab 2 Content -->
+                            <div id="tabs-2" class="hidden transition-all duration-300 transform" role="tabpanel"
+                                aria-labelledby="tabs-item-2">
+
+                                <div class="card border-none">
+                                    <div class="card-header border-b border-neutral-200">
+                                        <h4 class="card-title text-primary">Animal Details</h4>
+                                    </div>
+                                    <div class="p-6">
+                                        <form action="#" class="">
+                                            <div class="grid grid-cols-1 md:grid-cols-2  gap-6">
+
+                                                <div class="flex items-center gap-2">
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-radio text-primary"
+                                                            name="formRadio" id="formRadio01" checked="">
+                                                        <label class="ml-2" for="formRadio01">Cattle</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-radio text-primary"
+                                                            name="formRadio" id="formRadio02">
+                                                        <label class="ml-2" for="formRadio02">Sheep</label>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <label for="inputEmail4"
+                                                        class="text-gray-800 text-sm font-medium inline-block mb-2">Email</label>
+                                                    <input type="email" class="form-input" id="inputEmail4"
+                                                        placeholder="Email">
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <button type="submit" class="btn bg-primary text-white">Save</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Tab 3 Content -->
+                            <div id="tabs-3" class="hidden transition-all duration-300 transform" role="tabpanel"
+                                aria-labelledby="tabs-item-2">
+
+                                <div class="card border-none">
+                                    <div class="card-header border-b border-neutral-200">
+                                        <h4 class="card-title text-primary">Animal Details</h4>
+                                    </div>
+                                    <div class="p-6">
+                                        <form action="#" class="">
+                                            <div class="grid grid-cols-1 md:grid-cols-2  gap-6">
+
+                                                <div class="flex items-center gap-2">
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-radio text-primary"
+                                                            name="formRadio" id="formRadio01" checked="">
+                                                        <label class="ml-2" for="formRadio01">Cattle</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-radio text-primary"
+                                                            name="formRadio" id="formRadio02">
+                                                        <label class="ml-2" for="formRadio02">Sheep</label>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <label for="inputEmail4"
+                                                        class="text-gray-800 text-sm font-medium inline-block mb-2">Email</label>
+                                                    <input type="email" class="form-input" id="inputEmail4"
+                                                        placeholder="Email">
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <button type="submit" class="btn bg-primary text-white">Save</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Tab 4 Content -->
+                            <div id="tabs-4" class="hidden transition-all duration-300 transform" role="tabpanel"
+                                aria-labelledby="tabs-item-2">
+
+                                <div class="card border-none">
+                                    <div class="card-header border-b border-neutral-200">
+                                        <h4 class="card-title text-primary">Animal Details</h4>
+                                    </div>
+                                    <div class="p-6">
+                                        <form action="#" class="">
+                                            <div class="grid grid-cols-1 md:grid-cols-2  gap-6">
+
+                                                <div class="flex items-center gap-2">
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-radio text-primary"
+                                                            name="formRadio" id="formRadio01" checked="">
+                                                        <label class="ml-2" for="formRadio01">Cattle</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-radio text-primary"
+                                                            name="formRadio" id="formRadio02">
+                                                        <label class="ml-2" for="formRadio02">Sheep</label>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <label for="inputEmail4"
+                                                        class="text-gray-800 text-sm font-medium inline-block mb-2">Email</label>
+                                                    <input type="email" class="form-input" id="inputEmail4"
+                                                        placeholder="Email">
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <button type="submit" class="btn bg-primary text-white">Save</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Tab 5 Content -->
+                            <div id="tabs-5" class="hidden transition-all duration-300 transform" role="tabpanel"
+                                aria-labelledby="tabs-item-2">
+
+                                <div class="card border-none">
+                                    <div class="card-header border-b border-neutral-200">
+                                        <h4 class="card-title text-primary">Animal Details</h4>
+                                    </div>
+                                    <div class="p-6">
+                                        <form action="#" class="">
+                                            <div class="grid grid-cols-1 md:grid-cols-2  gap-6">
+
+                                                <div class="flex items-center gap-2">
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-radio text-primary"
+                                                            name="formRadio" id="formRadio01" checked="">
+                                                        <label class="ml-2" for="formRadio01">Cattle</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-radio text-primary"
+                                                            name="formRadio" id="formRadio02">
+                                                        <label class="ml-2" for="formRadio02">Sheep</label>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <label for="inputEmail4"
+                                                        class="text-gray-800 text-sm font-medium inline-block mb-2">Email</label>
+                                                    <input type="email" class="form-input" id="inputEmail4"
+                                                        placeholder="Email">
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <button type="submit" class="btn bg-primary text-white">Save</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Tab 5 Content -->
+                            <div id="tabs-5" class="hidden transition-all duration-300 transform" role="tabpanel"
+                                aria-labelledby="tabs-item-2">
+
+                                <div class="card border-none">
+                                    <div class="card-header border-b border-neutral-200">
+                                        <h4 class="card-title text-primary">Animal Details</h4>
+                                    </div>
+                                    <div class="p-6">
+                                        <form action="#" class="">
+                                            <div class="grid grid-cols-1 md:grid-cols-2  gap-6">
+
+                                                <div class="flex items-center gap-2">
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-radio text-primary"
+                                                            name="formRadio" id="formRadio01" checked="">
+                                                        <label class="ml-2" for="formRadio01">Cattle</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-radio text-primary"
+                                                            name="formRadio" id="formRadio02">
+                                                        <label class="ml-2" for="formRadio02">Sheep</label>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <label for="inputEmail4"
+                                                        class="text-gray-800 text-sm font-medium inline-block mb-2">Email</label>
+                                                    <input type="email" class="form-input" id="inputEmail4"
+                                                        placeholder="Email">
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <button type="submit" class="btn bg-primary text-white">Save</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Tab 5 Content -->
+                            <div id="tabs-6" class="hidden transition-all duration-300 transform" role="tabpanel"
+                                aria-labelledby="tabs-item-2">
+
+                                <div class="card border-none">
+                                    <div class="card-header border-b border-neutral-200">
+                                        <h4 class="card-title text-primary">Animal Details</h4>
+                                    </div>
+                                    <div class="p-6">
+                                        <form action="#" class="">
+                                            <div class="grid grid-cols-1 md:grid-cols-2  gap-6">
+
+                                                <div class="flex items-center gap-2">
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-radio text-primary"
+                                                            name="formRadio" id="formRadio01" checked="">
+                                                        <label class="ml-2" for="formRadio01">Cattle</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-radio text-primary"
+                                                            name="formRadio" id="formRadio02">
+                                                        <label class="ml-2" for="formRadio02">Sheep</label>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <label for="inputEmail4"
+                                                        class="text-gray-800 text-sm font-medium inline-block mb-2">Email</label>
+                                                    <input type="email" class="form-input" id="inputEmail4"
+                                                        placeholder="Email">
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <button type="submit" class="btn bg-primary text-white">Save</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Tab 7 Content -->
+                            <div id="tabs-7" class="hidden transition-all duration-300 transform" role="tabpanel"
+                                aria-labelledby="tabs-item-2">
+
+                                <div class="card border-none">
+                                    <div class="card-header border-b border-neutral-200">
+                                        <h4 class="card-title text-primary">Animal Details</h4>
+                                    </div>
+                                    <div class="p-6">
+                                        <form action="#" class="">
+                                            <div class="grid grid-cols-1 md:grid-cols-2  gap-6">
+
+                                                <div class="flex items-center gap-2">
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-radio text-primary"
+                                                            name="formRadio" id="formRadio01" checked="">
+                                                        <label class="ml-2" for="formRadio01">Cattle</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-radio text-primary"
+                                                            name="formRadio" id="formRadio02">
+                                                        <label class="ml-2" for="formRadio02">Sheep</label>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <label for="inputEmail4"
+                                                        class="text-gray-800 text-sm font-medium inline-block mb-2">Email</label>
+                                                    <input type="email" class="form-input" id="inputEmail4"
+                                                        placeholder="Email">
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <button type="submit" class="btn bg-primary text-white">Save</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="google_translate_element"></div>
+
+
+                </div>
+                <!-- end card -->
+
+            </main>
+
+            <!-- Footer Start -->
+            <footer class="footer h-16 flex items-center px-6 border-t border-gray-200 mt-auto">
+                <div class="flex md:justify-between justify-center w-full gap-4">
+                    <div>
+                        <p class="text-sm font-medium"><script>document.write(new Date().getFullYear())</script> © Farmize</p>
+                    </div>
+                    <div class="md:flex hidden gap-2 item-center md:justify-end">
+                        <p class="text-sm font-medium">Design &amp; Develop by <a href="#" class="text-primary">Digital Platform Solutions</a></p>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer End -->
+
+        </div>
+        <!-- End Page content -->
+
+        <div class="profile-menu">
+            <div class="flex flex-col items-center h-full gap-4 py-10 px-3">
+                <!-- Profile Link -->
+                <a href="#" type="button" class="flex flex-col items-center gap-1">
+                    <img src="assets/images/users/avatar-6.jpg" alt="user-image" class="rounded-full h-8 w-8">
+                    <span class="font-medium text-base">Jamie D.</span>
+                    <span class="text-sm">Admin</span>
+                </a>
+
+                <!-- Search Modal Button -->
+                <button type="button" data-hs-overlay="#search-modal" class="bg-white rounded-full shadow-md p-2">
+                    <span class="sr-only">Search</span>
+                    <span class="flex items-center justify-center h-6 w-6">
+                        <i class="uil uil-search text-2xl"></i>
+                    </span>
+                </button>
+
+                <!-- Fullscreen Toggle Button -->
+                <div class="flex">
+                    <button data-toggle="fullscreen" type="button" class="bg-white rounded-full shadow-md p-2">
+                        <span class="sr-only">Fullscreen Mode</span>
+                        <span class="flex items-center justify-center h-6 w-6">
+                            <i class="uil uil-focus text-2xl"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="search-modal"
+            class="hs-overlay hidden w-full h-full fixed top-0 start-0 z-[60] overflow-x-hidden overflow-y-auto pointer-events-none">
+            <div
+                class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto">
+                <div
+                    class="flex flex-col bg-white shadow-sm rounded-xl pointer-events-auto overflow-hidden">
+                    <div class="relative z-[60]">
+                        <input type="search" id="search-input" class="form-input ps-10">
+                        <span class="absolute start-3 top-1.5">
+                            <i class="uil uil-search text-lg"></i>
+                        </span>
+    
+                        <span class="absolute end-3 top-1.5">
+                            <button data-hs-overlay="#search-modal">
+                                <i class="uil uil-times text-lg"></i>
+                            </button>
+                        </span>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Plugin Js -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/preline/preline.js"></script>
+
+    <!-- App Js -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Translate Js -->
+    <script src="assets/js/translate.js"></script>
+
+
+   
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+        // JavaScript for Tab Switching
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabButtons = document.querySelectorAll('[role="tab"]');
+            const tabPanels = document.querySelectorAll('[role="tabpanel"]');
+
+            // Add click event listener to each tab button
+            tabButtons.forEach((button) => {
+                button.addEventListener("click", () => {
+                    const targetId = button.getAttribute("data-hs-tab"); // Get the target tab content ID
+
+                    // Deactivate all tabs and hide their content
+                    tabButtons.forEach((btn) => btn.classList.remove("text-white", "bg-primary"));
+                    tabPanels.forEach((panel) => panel.classList.add("hidden"));
+
+                    // Activate the clicked tab and show its content
+                    button.classList.add("text-white", "bg-primary");
+                    document.querySelector(targetId).classList.remove("hidden");
+                });
+            });
+
+            // Initialize the first tab as active by default
+            tabButtons[0].classList.add("text-white", "bg-primary");
+            tabPanels[0].classList.remove("hidden");
+        });
+    </script>
+
+</body>
+
+</html>

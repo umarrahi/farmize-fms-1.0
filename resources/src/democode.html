@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Animals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .radio-group {
+            display: flex;
+            gap: 10px;
+        }
+        .info {
+            font-size: 0.9em;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Animals</h1>
+    <form>
+        <!-- Animal Details Section -->
+        <div class="form-section">
+            <h2>Animal Details</h2>
+
+            <!-- Species -->
+            <div class="form-group">
+                <label>Species *</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="species" value="cattle" required> Cattle</label>
+                    <label><input type="radio" name="species" value="sheep"> Sheep</label>
+                </div>
+            </div>
+
+            <!-- Breed -->
+            <div class="form-group">
+                <label for="breed">Breed *</label>
+                <select id="breed" name="breed" required>
+                    <option value="">Make a selection</option>
+                    <option value="breed1">Breed 1</option>
+                    <option value="breed2">Breed 2</option>
+                </select>
+            </div>
+
+            <!-- Age Class -->
+            <div class="form-group">
+                <label for="age-class">Age Class *</label>
+                <select id="age-class" name="age-class" required>
+                    <option value="">Make a selection</option>
+                    <option value="young">Young</option>
+                    <option value="adult">Adult</option>
+                </select>
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <label>Date of Birth *</label>
+                <p class="info">Select a day, month, or year of birth for your animal.</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="dob-option" value="day"> Day</label>
+                    <label><input type="radio" name="dob-option" value="month"> Month</label>
+                    <label><input type="radio" name="dob-option" value="year" checked> Year</label>
+                    <label><input type="radio" name="dob-option" value="not-track"> Do not track</label>
+                </div>
+                <input type="date" name="dob" id="dob">
+            </div>
+
+            <!-- Hide Color -->
+            <div class="form-group">
+                <label for="hide-color">Hide Color</label>
+                <select id="hide-color" name="hide-color">
+                    <option value="">Make a selection</option>
+                    <option value="color1">Color 1</option>
+                    <option value="color2">Color 2</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Identification Section -->
+        <div class="form-section">
+            <h2>Identification</h2>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
