@@ -1,7 +1,7 @@
 @extends('backend.layouts.app')
 
 @section('title')
-   Add Animals - Farmize Management Syestem
+    Add Animals - Farmize Management Syestem
 @endsection
 
 @section('content')
@@ -188,28 +188,81 @@
                                             </div>
                                             <div class="card-body p-6">
                                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                                                    <!-- Name -->
+                                                    <!-- Dam -->
                                                     <div>
                                                         <label
-                                                            class="text-gray-800 text-sm font-medium inline-block mb-2">Name</label>
-                                                        <input type="text" id="" placeholder="Name"
-                                                            class="form-input">
-                                                    </div>
-                                                    <!-- Tatto -->
-                                                    <div>
-                                                        <label
-                                                            class="text-gray-800 text-sm font-medium inline-block mb-2">Tatto</label>
-                                                        <input type="text" id="" placeholder="Tatto"
-                                                            class="form-input">
-                                                    </div>
-                                                    <!-- Brand -->
-                                                    <div>
-                                                        <label
-                                                            class="text-gray-800 text-sm font-medium inline-block mb-2">Brand</label>
-                                                        <input type="text" id="" placeholder="Brand"
-                                                            class="form-input">
+                                                            class="text-gray-800 text-sm font-medium inline-block mb-2">Dam</label>
+                                                        <div class="flex items-center gap-4 mb-3">
+                                                            <label class="flex items-center gap-2 text-gray-700">
+                                                                <input type="radio" name="dam" value="list"
+                                                                    class="form-radio text-primary">
+                                                                Select from individuals list
+                                                            </label>
+                                                            <label class="flex items-center gap-2 text-gray-700">
+                                                                <input type="radio" name="dam" value="manual"
+                                                                    class="form-radio text-primary" checked>
+                                                                Manual entry
+                                                            </label>
+                                                        </div>
+                                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                                            <div>
+                                                                <label
+                                                                    class="text-gray-800 text-sm font-medium inline-block mb-2">Visual
+                                                                    ID</label>
+                                                                <input type="text" id="visualID"
+                                                                    placeholder="Visual ID" class="form-input">
+                                                            </div>
+                                                            <div>
+                                                                <label
+                                                                    class="text-gray-800 text-sm font-medium inline-block mb-2">Name</label>
+                                                                <input type="text" id="name" placeholder="Name"
+                                                                    class="form-input">
+                                                            </div>
+                                                        </div>
                                                     </div>
 
+                                                    <!-- Surrogate -->
+                                                    <div>
+                                                        <label
+                                                            class="text-gray-800 text-sm font-medium inline-block mb-2">Surrogate</label>
+                                                        <div class="flex items-center gap-4 mb-3">
+                                                            <label class="flex items-center gap-2 text-gray-700">
+                                                                <input type="radio" name="surrogate" value="list"
+                                                                    class="form-radio text-primary">
+                                                                Select from individuals list
+                                                            </label>
+                                                            <label class="flex items-center gap-2 text-gray-700">
+                                                                <input type="radio" name="surrogate" value="manual"
+                                                                    class="form-radio text-primary">
+                                                                Manual entry
+                                                            </label>
+                                                        </div>
+                                                        <button type="button"
+                                                            class="btn border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 px-4 py-2 rounded-md text-sm">
+                                                            Select from individuals list
+                                                        </button>
+                                                    </div>
+
+                                                    <!-- Sire -->
+                                                    <div>
+                                                        <h3 class="text-sm font-medium mb-2">Sire</h3>
+                                                        <div class="flex items-center gap-4 mb-3">
+                                                            <label class="flex items-center gap-2 text-gray-700">
+                                                                <input type="radio" name="sire" value="list"
+                                                                    class="form-radio text-primary">
+                                                                Select from individuals list
+                                                            </label>
+                                                            <label class="flex items-center gap-2 text-gray-700">
+                                                                <input type="radio" name="sire" value="manual"
+                                                                    class="form-radio text-primary">
+                                                                Manual entry
+                                                            </label>
+                                                        </div>
+                                                        <button type="button"
+                                                            class="btn border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 px-4 py-2 rounded-md text-sm">
+                                                            Select from individuals list
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -231,36 +284,33 @@
 
                             <div class="card border-none">
                                 <div class="card-header border-b border-neutral-200">
-                                    <h4 class="card-title text-primary">Animal Details</h4>
+                                    <h4 class="card-title text-primary">Farm Entry</h4>
                                 </div>
                                 <div class="p-6">
                                     <form action="#" class="">
-                                        <div class="grid grid-cols-1 md:grid-cols-2  gap-6">
 
-                                            <div class="flex items-center gap-2">
-                                                <div class="form-check">
-                                                    <input type="radio" class="form-radio text-primary"
-                                                        name="formRadio" id="formRadio01" checked="">
-                                                    <label class="ml-2" for="formRadio01">Cattle</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input type="radio" class="form-radio text-primary"
-                                                        name="formRadio" id="formRadio02">
-                                                    <label class="ml-2" for="formRadio02">Sheep</label>
-                                                </div>
-                                            </div>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
+                                            <!-- On Farm Date -->
                                             <div>
-                                                <label for="inputEmail4"
-                                                    class="text-gray-800 text-sm font-medium inline-block mb-2">Email</label>
-                                                <input type="email" class="form-input" id="inputEmail4"
-                                                    placeholder="Email">
+                                                <label class="text-gray-800 text-sm font-medium inline-block mb-2">Date of
+                                                    Birth
+                                                    <span class="menu-icon"
+                                                        title="When not specified, the date on farm defaults to the animal's date of birth.">
+                                                        <i class="uil uil-info-circle"></i>
+                                                </label>
+                                                <p class="mb-2">When not specified, the date on farm defaults to the
+                                                    animal's date of birth.</p>
+                                                <input type="date" name="onFarmDate" id=""
+                                                    class="form-input" id="onFarmDate" value="2025-01-01">
                                             </div>
                                         </div>
 
+                                        <!-- Save Button -->
                                         <div class="mt-4">
                                             <button type="submit" class="btn bg-primary text-white">Save</button>
                                         </div>
+
                                     </form>
 
                                 </div>
@@ -274,33 +324,21 @@
 
                             <div class="card border-none">
                                 <div class="card-header border-b border-neutral-200">
-                                    <h4 class="card-title text-primary">Animal Details</h4>
+                                    <h4 class="card-title text-primary">Tag</h4>
                                 </div>
                                 <div class="p-6">
                                     <form action="#" class="">
-                                        <div class="grid grid-cols-1 md:grid-cols-2  gap-6">
-
-                                            <div class="flex items-center gap-2">
-                                                <div class="form-check">
-                                                    <input type="radio" class="form-radio text-primary"
-                                                        name="formRadio" id="formRadio01" checked="">
-                                                    <label class="ml-2" for="formRadio01">Cattle</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input type="radio" class="form-radio text-primary"
-                                                        name="formRadio" id="formRadio02">
-                                                    <label class="ml-2" for="formRadio02">Sheep</label>
-                                                </div>
-                                            </div>
-
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                            <!-- Tagging Date -->
                                             <div>
-                                                <label for="inputEmail4"
-                                                    class="text-gray-800 text-sm font-medium inline-block mb-2">Email</label>
-                                                <input type="email" class="form-input" id="inputEmail4"
-                                                    placeholder="Email">
+                                                <label class="text-gray-800 text-sm font-medium inline-block mb-2">Tagging
+                                                    Date*</label>
+                                                <input type="datetime-local" name="" id=""
+                                                    class="form-input" id="" value="2025-01-01 12:33 pm">
                                             </div>
                                         </div>
 
+                                        <!-- Save Button -->
                                         <div class="mt-4">
                                             <button type="submit" class="btn bg-primary text-white">Save</button>
                                         </div>
@@ -317,33 +355,36 @@
 
                             <div class="card border-none">
                                 <div class="card-header border-b border-neutral-200">
-                                    <h4 class="card-title text-primary">Animal Details</h4>
+                                    <h4 class="card-title text-primary">Management Group</h4>
                                 </div>
                                 <div class="p-6">
                                     <form action="#" class="">
-                                        <div class="grid grid-cols-1 md:grid-cols-2  gap-6">
-
-                                            <div class="flex items-center gap-2">
-                                                <div class="form-check">
-                                                    <input type="radio" class="form-radio text-primary"
-                                                        name="formRadio" id="formRadio01" checked="">
-                                                    <label class="ml-2" for="formRadio01">Cattle</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input type="radio" class="form-radio text-primary"
-                                                        name="formRadio" id="formRadio02">
-                                                    <label class="ml-2" for="formRadio02">Sheep</label>
-                                                </div>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                            <!-- Management Date -->
+                                            <div>
+                                                <label
+                                                    class="text-gray-800 text-sm font-medium inline-block mb-2">Management
+                                                    Date</label>
+                                                <input type="datetime-local" name="" id=""
+                                                    class="form-input" id="" value="">
                                             </div>
 
+                                            <!-- Management Group -->
                                             <div>
-                                                <label for="inputEmail4"
-                                                    class="text-gray-800 text-sm font-medium inline-block mb-2">Email</label>
-                                                <input type="email" class="form-input" id="inputEmail4"
-                                                    placeholder="Email">
+                                                <label for="breed"
+                                                    class="text-gray-800 text-sm font-medium inline-block mb-2">Management
+                                                    Group</label>
+                                                <select id="breed" name="breed" required
+                                                    class="form-select cursor-pointer">
+                                                    <option value="">Make a selection</option>
+                                                    <option value="">None</option>
+                                                    <option value="">Group 1</option>
+                                                    <option value="">Group 2</option>ٖ
+                                                </select>
                                             </div>
                                         </div>
 
+                                        <!-- Save Button -->
                                         <div class="mt-4">
                                             <button type="submit" class="btn bg-primary text-white">Save</button>
                                         </div>
@@ -360,33 +401,48 @@
 
                             <div class="card border-none">
                                 <div class="card-header border-b border-neutral-200">
-                                    <h4 class="card-title text-primary">Animal Details</h4>
+                                    <h4 class="card-title text-primary">Weight</h4>
                                 </div>
                                 <div class="p-6">
                                     <form action="#" class="">
-                                        <div class="grid grid-cols-1 md:grid-cols-2  gap-6">
-
-                                            <div class="flex items-center gap-2">
-                                                <div class="form-check">
-                                                    <input type="radio" class="form-radio text-primary"
-                                                        name="formRadio" id="formRadio01" checked="">
-                                                    <label class="ml-2" for="formRadio01">Cattle</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input type="radio" class="form-radio text-primary"
-                                                        name="formRadio" id="formRadio02">
-                                                    <label class="ml-2" for="formRadio02">Sheep</label>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                            <!-- Date Weighed -->
+                                            <div>
+                                                <label class="text-gray-800 text-sm font-medium inline-block mb-2">Date
+                                                    Weighed*</label>
+                                                <input type="datetime-local" name="" id=""
+                                                    class="form-input" id="" value="">
+                                            </div>
+                                            <!-- Weight -->
+                                            <div>
+                                                <label
+                                                    class="text-gray-800 text-sm font-medium inline-block mb-2">Weight</label>
+                                                <div class="flex">
+                                                    <input type="text" placeholder="45.88"
+                                                        class="form-input ltr:rounded-l-none rtl:rounded-r-none">
+                                                    <div
+                                                        class="flex items-center justify-center border border-[#e0e6ed] bg-[#eee] px-3 font-semibold ltr:rounded-l-md ltr:border-r-0 rtl:rounded-r-md">
+                                                        kg
+                                                    </div>
                                                 </div>
                                             </div>
-
+                                            <!-- Weight Event -->
                                             <div>
-                                                <label for="inputEmail4"
-                                                    class="text-gray-800 text-sm font-medium inline-block mb-2">Email</label>
-                                                <input type="email" class="form-input" id="inputEmail4"
-                                                    placeholder="Email">
+                                                <label for="breed"
+                                                    class="text-gray-800 text-sm font-medium inline-block mb-2">Weight
+                                                    Event</label>
+                                                <select id="breed" name="breed" required
+                                                    class="form-select cursor-pointer">
+                                                    <option value="">Check weight</option>
+                                                    <option value="">Birth weight</option>
+                                                    <option value="">Weaning weight</option>ٖ
+                                                    <option value="">Induction weight</option>ٖ
+                                                    <option value="">Exit weight</option>ٖ
+                                                </select>
                                             </div>
                                         </div>
 
+                                        <!-- Save Button -->
                                         <div class="mt-4">
                                             <button type="submit" class="btn bg-primary text-white">Save</button>
                                         </div>
@@ -397,82 +453,66 @@
 
                         </div>
 
-                        <!-- Tab 5 Content -->
-                        <div id="tabs-5" class="hidden transition-all duration-300 transform" role="tabpanel"
-                            aria-labelledby="tabs-item-2">
-
-                            <div class="card border-none">
-                                <div class="card-header border-b border-neutral-200">
-                                    <h4 class="card-title text-primary">Animal Details</h4>
-                                </div>
-                                <div class="p-6">
-                                    <form action="#" class="">
-                                        <div class="grid grid-cols-1 md:grid-cols-2  gap-6">
-
-                                            <div class="flex items-center gap-2">
-                                                <div class="form-check">
-                                                    <input type="radio" class="form-radio text-primary"
-                                                        name="formRadio" id="formRadio01" checked="">
-                                                    <label class="ml-2" for="formRadio01">Cattle</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input type="radio" class="form-radio text-primary"
-                                                        name="formRadio" id="formRadio02">
-                                                    <label class="ml-2" for="formRadio02">Sheep</label>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <label for="inputEmail4"
-                                                    class="text-gray-800 text-sm font-medium inline-block mb-2">Email</label>
-                                                <input type="email" class="form-input" id="inputEmail4"
-                                                    placeholder="Email">
-                                            </div>
-                                        </div>
-
-                                        <div class="mt-4">
-                                            <button type="submit" class="btn bg-primary text-white">Save</button>
-                                        </div>
-                                    </form>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- Tab 5 Content -->
+                        <!-- Tab 6 Content -->
                         <div id="tabs-6" class="hidden transition-all duration-300 transform" role="tabpanel"
                             aria-labelledby="tabs-item-2">
 
                             <div class="card border-none">
                                 <div class="card-header border-b border-neutral-200">
-                                    <h4 class="card-title text-primary">Animal Details</h4>
+                                    <h4 class="card-title text-primary">Conditional Score</h4>
                                 </div>
                                 <div class="p-6">
                                     <form action="#" class="">
-                                        <div class="grid grid-cols-1 md:grid-cols-2  gap-6">
-
-                                            <div class="flex items-center gap-2">
-                                                <div class="form-check">
-                                                    <input type="radio" class="form-radio text-primary"
-                                                        name="formRadio" id="formRadio01" checked="">
-                                                    <label class="ml-2" for="formRadio01">Cattle</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input type="radio" class="form-radio text-primary"
-                                                        name="formRadio" id="formRadio02">
-                                                    <label class="ml-2" for="formRadio02">Sheep</label>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                            <!-- Date Scored -->
+                                            <div>
+                                                <label class="text-gray-800 text-sm font-medium inline-block mb-2">Date
+                                                    Scored*</label>
+                                                <input type="datetime-local" name="" id=""
+                                                    class="form-input" id="" value="">
+                                            </div>
+                                            <!-- Score -->
+                                            <div>
+                                                <label
+                                                    class="text-gray-800 text-sm font-medium inline-block mb-2">Score*</label>
+                                                <div class="flex">
+                                                    <input type="text" placeholder="45.88"
+                                                        class="form-input ltr:rounded-l-none rtl:rounded-r-none">
+                                                    <div
+                                                        class="flex items-center justify-center border border-[#e0e6ed] bg-[#eee] px-3 font-semibold ltr:rounded-l-md ltr:border-r-0 rtl:rounded-r-md">
+                                                        1to5
+                                                    </div>
                                                 </div>
                                             </div>
-
+                                            <!-- Min Score -->
                                             <div>
-                                                <label for="inputEmail4"
-                                                    class="text-gray-800 text-sm font-medium inline-block mb-2">Email</label>
-                                                <input type="email" class="form-input" id="inputEmail4"
-                                                    placeholder="Email">
+                                                <label class="text-gray-800 text-sm font-medium inline-block mb-2">Min
+                                                    Score</label>
+                                                <div class="flex">
+                                                    <input type="number" placeholder="45.88"
+                                                        class="form-input ltr:rounded-l-none rtl:rounded-r-none">
+                                                    <div
+                                                        class="flex items-center justify-center border border-[#e0e6ed] bg-[#eee] px-4 font-semibold ltr:rounded-l-md ltr:border-r-0 rtl:rounded-r-md">
+                                                        1to5
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Max Score -->
+                                            <div>
+                                                <label class="text-gray-800 text-sm font-medium inline-block mb-2">Max
+                                                    Score</label>
+                                                <div class="flex">
+                                                    <input type="number" placeholder=""
+                                                        class="form-input ltr:rounded-r-none rtl:rounded-l-none">
+                                                    <div
+                                                        class="flex items-center justify-center border border-[#e0e6ed] bg-[#eee] px-3 font-semibold ltr:rounded-l-md ltr:border-r-0 rtl:rounded-r-md">
+                                                        1to5
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
+                                        <!-- Save Button -->
                                         <div class="mt-4">
                                             <button type="submit" class="btn bg-primary text-white">Save</button>
                                         </div>
@@ -489,35 +529,31 @@
 
                             <div class="card border-none">
                                 <div class="card-header border-b border-neutral-200">
-                                    <h4 class="card-title text-primary">Animal Details</h4>
+                                    <h4 class="card-title text-primary">Movement</h4>
                                 </div>
                                 <div class="p-6">
                                     <form action="#" class="">
                                         <div class="grid grid-cols-1 md:grid-cols-2  gap-6">
-
-                                            <div class="flex items-center gap-2">
-                                                <div class="form-check">
-                                                    <input type="radio" class="form-radio text-primary"
-                                                        name="formRadio" id="formRadio01" checked="">
-                                                    <label class="ml-2" for="formRadio01">Cattle</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input type="radio" class="form-radio text-primary"
-                                                        name="formRadio" id="formRadio02">
-                                                    <label class="ml-2" for="formRadio02">Sheep</label>
-                                                </div>
-                                            </div>
-
+                                            <!-- Date Entered -->
                                             <div>
-                                                <label for="inputEmail4"
-                                                    class="text-gray-800 text-sm font-medium inline-block mb-2">Email</label>
-                                                <input type="email" class="form-input" id="inputEmail4"
-                                                    placeholder="Email">
+                                                <label class="text-gray-800 text-sm font-medium inline-block mb-2">Date Entered*</label>
+                                                <input type="datetime-local" name="" id=""
+                                                    class="form-input" value="">
+                                            </div>
+                                            <!-- New Location -->
+                                            <div>
+                                                <label for="breed"
+                                                    class="text-gray-800 text-sm font-medium inline-block mb-2">New Location</label>
+                                                <select id="breed" name="breed" required
+                                                    class="form-select cursor-pointer">
+                                                    <option value="">No set location</option>
+                                                </select>
                                             </div>
                                         </div>
 
+                                        <!-- Save Button -->
                                         <div class="mt-4">
-                                            <button type="submit" class="btn bg-primary text-white">Save</button>
+                                            <button type="submit" class="btn bg-primary text-white">Add Now</button>
                                         </div>
                                     </form>
 
@@ -527,7 +563,6 @@
                         </div>
                     </div>
                 </div>
-                <div id="google_translate_element"></div>
 
 
             </div>
@@ -539,6 +574,7 @@
     <!-- End Page content -->
 @endsection
 
+{{-- <div id="google_translate_element"></div> --}}
 
 {{-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> </script> --}}
 
@@ -552,7 +588,7 @@
         tabButtons.forEach((button) => {
             button.addEventListener("click", () => {
                 const targetId = button.getAttribute(
-                "data-hs-tab"); // Get the target tab content ID
+                    "data-hs-tab"); // Get the target tab content ID
 
                 // Deactivate all tabs and hide their content
                 tabButtons.forEach((btn) => btn.classList.remove("text-white", "bg-primary"));
