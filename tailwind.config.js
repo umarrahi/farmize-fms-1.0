@@ -7,6 +7,7 @@ module.exports = {
 
         './resources/views/**/*.blade.php', // Laravel Blade files
         './public/**/*.html',              // Any static HTML files
+        
     ],
     darkMode: ['class', '[data-mode="dark"]'],
     theme: {

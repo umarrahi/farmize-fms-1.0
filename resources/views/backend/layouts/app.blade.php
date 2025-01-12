@@ -49,6 +49,9 @@
     <script src="{{ asset('assets/libs/simplebar/simplebar.min.js') }}"></script>
     <script src="{{ asset('assets/libs/node-waves/waves.min.js') }}"></script>
     <script src="{{ asset('assets/libs/preline/preline.js') }}"></script>
+    
+    <!-- Script Js (Umar Custom JS Code) -->
+    <script src="{{ asset('assets/js/script.js') }}"></script>
 
     <!-- App Js -->
     <script src="{{ asset('assets/js/app.js') }}"></script>
@@ -70,9 +73,6 @@
 
     <!-- Dashboard Project Page js -->
     <script src="assets/js/pages/dashboard.js"></script>
-
-    <!-- Script Js (Umar Custom JS Code) -->
-    <script src="{{ asset('assets/js/script.js') }}"></script>
 
 </body>
 
