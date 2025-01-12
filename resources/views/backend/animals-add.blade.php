@@ -1,7 +1,7 @@
 @extends('backend.layouts.app')
 
 @section('title')
-    Animals - Farmize Management Syestem
+   Add Animals - Farmize Management Syestem
 @endsection
 
 @section('content')
