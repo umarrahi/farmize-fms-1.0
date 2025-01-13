@@ -33,6 +33,14 @@
                 </a>
             </li>
 
+            <!-- Contact -->
+            <li class="menu-item">
+                <a href="{{ url('contacts') }}" class="menu-link">
+                    <span class="menu-icon"><i class="uil uil-user-square"></i></span>
+                    <span class="menu-text">Contacts</span>  
+                </a>
+            </li>
+
             <!-- Elements -->
             <!-- <li class="menu-title">Elements</li>
 

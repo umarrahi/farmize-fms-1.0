@@ -17,3 +17,7 @@ Route::get('animals/add', function () {
 Route::get('calender', function () {
     return view('backend.calender');
 });
+
+Route::get('contacts', function () {
+    return view('backend.contacts');
+});
