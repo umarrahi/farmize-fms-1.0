@@ -13,3 +13,7 @@ Route::get('animals', function () {
 Route::get('animals/add', function () {
     return view('backend.animals-add');
 });
+
+Route::get('calender', function () {
+    return view('backend.calender');
+});

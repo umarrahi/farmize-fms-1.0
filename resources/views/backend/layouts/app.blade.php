@@ -23,7 +23,7 @@
 
     <div class="app-wrapper">
 
-         <!-- Sidebar -->
+        <!-- Sidebar -->
         @include('backend.layouts.sidebar')
 
         <!-- Start Page Content here -->
@@ -49,9 +49,7 @@
     <script src="{{ asset('assets/libs/simplebar/simplebar.min.js') }}"></script>
     <script src="{{ asset('assets/libs/node-waves/waves.min.js') }}"></script>
     <script src="{{ asset('assets/libs/preline/preline.js') }}"></script>
-    
-    <!-- Script Js (Umar Custom JS Code) -->
-    <script src="{{ asset('assets/js/script.js') }}"></script>
+    <script src="{{ asset('assets/libs/fullcalendar/index.global.min.js') }}"></script>
 
     <!-- App Js -->
     <script src="{{ asset('assets/js/app.js') }}"></script>
@@ -60,19 +58,22 @@
     <script src="{{ asset('assets/js/translate.js') }}"></script>
 
     <!-- Apexcharts js -->
-    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="{{ asset('assets/libs/apexcharts/apexcharts.min.js') }}"></script>
 
     <!-- Knob charts js -->
-    <script src="assets/libs/jquery-knob/jquery.knob.min.js"></script>
+    <script src="{{ asset('assets/libs/jquery-knob/jquery.knob.min.js') }}"></script>
 
     <!-- Morris Js-->
-    <script src="assets/libs/morris.js/morris.min.js"></script>
+    <script src="{{ asset('assets/libs/morris.js/morris.min.js') }}"></script>
 
     <!-- Raphael Js-->
-    <script src="assets/libs/raphael/raphael.min.js"></script>
+    <script src="{{ asset('assets/libs/raphael/raphael.min.js') }}"></script>
 
     <!-- Dashboard Project Page js -->
-    <script src="assets/js/pages/dashboard.js"></script>
+    <script src="{{ asset('assets/js/pages/dashboard.js') }}"></script>
+
+    <!-- calendar init -->
+    {{-- <script src="{{ asset('assets/js/pages/app-calendar.js') }}"></script> --}}
 
 </body>
 
