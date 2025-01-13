@@ -288,29 +288,24 @@
                                         </div>
                                         <div class="p-6">
                                             <form action="#" class="">
-                                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                                    <!-- Management Date -->
-                                                    <div>
-                                                        <label
-                                                            class="text-gray-800 text-sm font-medium inline-block mb-2">Management
-                                                            Date</label>
-                                                        <input type="datetime-local" name="" id=""
-                                                            class="form-input" id="" value="">
-                                                    </div>
-
-                                                    <!-- Management Group -->
-                                                    <div>
-                                                        <label for="breed"
-                                                            class="text-gray-800 text-sm font-medium inline-block mb-2">Management
-                                                            Group</label>
-                                                        <select id="breed" name="breed" required
-                                                            class="form-select cursor-pointer">
-                                                            <option value="">Make a selection</option>
-                                                            <option value="">None</option>
-                                                            <option value="">Group 1</option>
-                                                            <option value="">Group 2</option>ٖ
-                                                        </select>
-                                                    </div>
+                                                <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
+                                                        <div>
+                                                            <label class="text-gray-800 text-sm font-medium inline-block mb-2">Tax Identification Number (TIN)</label>
+                                                            <input type="text" name="" id="" value="" placeholder="Enter Tax ID" class="form-input">
+                                                        </div>
+                                                        <div>
+                                                            <label class="text-gray-800 text-sm font-medium inline-block mb-2">Alternate Phone</label>
+                                                            <input type="tel" name="" id="" value="" placeholder="Enter alternate contact number" class="form-input">
+                                                        </div>
+                                                        <div>
+                                                            <label class="text-gray-800 text-sm font-medium inline-block mb-2">Website URL</label>
+                                                            <input type="text" name="" id="" value="" placeholder="Enter website link" class="form-input">
+                                                        </div>
+                                                        <div>
+                                                            <label class="text-gray-800 text-sm font-medium inline-block mb-2">Notes/Remarks</label>
+                                                            <textarea rows="4" name="" placeholder="Enter any additional notes or remarks" class="form-textarea ltr:rounded-l-none rtl:rounded-r-none"></textarea>
+                                                        </div>
+                                                   
                                                 </div>
 
                                                 <!-- Save Button -->
