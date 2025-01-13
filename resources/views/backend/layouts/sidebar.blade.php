@@ -29,7 +29,7 @@
             <li class="menu-item">
                 <a href="{{ url('calender') }}" class="menu-link">
                     <span class="menu-icon"><i class="uil uil-calender"></i></span>
-                    <span class="menu-text">Calender</span>  
+                    <span class="menu-text">Calendar</span>  
                 </a>
             </li>
 

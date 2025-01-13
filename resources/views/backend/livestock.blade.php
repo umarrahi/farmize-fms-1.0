@@ -1,7 +1,7 @@
 @extends('backend.layouts.app')
 
 @section('title')
-    Animals - Farmize Management System
+    Livestock - Farmize Management System
 @endsection
 
 @section('content')
@@ -9,7 +9,7 @@
 <div class="app-content">
 
     <!-- Top Bar -->
-    @include('backend.layouts.topbar', ['title' => 'Animals List'])
+    @include('backend.layouts.topbar', ['title' => 'Livestock List'])
 
     <main class="p-6">
 

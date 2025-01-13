@@ -1,7 +1,7 @@
 @extends('backend.layouts.app')
 
 @section('title')
-    Add Animals - Farmize Management Syestem
+    Add Animals - Farmize Management System
 @endsection
 
 @section('content')
@@ -19,37 +19,37 @@
                     <nav class="flex flex-wrap items-center justify-around bg-gray-100 p-3 gap-2" aria-label="Tabs"
                         role="tablist">
                         <button type="button"
-                            class="hs-tab-active:-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700 active"
+                            class="hs-tab-active:font-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700 active"
                             id="tabs-item-1" data-hs-tab="#tabs-1" aria-controls="tabs-1" role="tab">
                             Animal Details
                         </button>
                         <button type="button"
-                            class="hs-tab-active:-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
+                            class="hs-tab-active:font-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
                             id="tabs-item-2" data-hs-tab="#tabs-2" aria-controls="tabs-2" role="tab">
                             Farm Entry
                         </button>
                         <button type="button"
-                            class="hs-tab-active:-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
+                            class="hs-tab-active:font-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
                             id="tabs-item-3" data-hs-tab="#tabs-3" aria-controls="tabs-3" role="tab">
                             Tag
                         </button>
                         <button type="button"
-                            class="hs-tab-active:-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
+                            class="hs-tab-active:font-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
                             id="tabs-item-4" data-hs-tab="#tabs-4" aria-controls="tabs-4" role="tab">
                             Management Group
                         </button>
                         <button type="button"
-                            class="hs-tab-active:-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
+                            class="hs-tab-active:font-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
                             id="tabs-item-5" data-hs-tab="#tabs-5" aria-controls="tabs-5" role="tab">
                             Weight
                         </button>
                         <button type="button"
-                            class="hs-tab-active:-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
+                            class="hs-tab-active:font-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
                             id="tabs-item-6" data-hs-tab="#tabs-6" aria-controls="tabs-6" role="tab">
                             Conditional Score
                         </button>
                         <button type="button"
-                            class="hs-tab-active:-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
+                            class="hs-tab-active:font-semibold hs-tab-active:bg-primary w-full sm:w-40 flex justify-center py-2 items-center gap-2 border border-gray-300 transition-all text-sm whitespace-nowrap text-gray-700"
                             id="tabs-item-7" data-hs-tab="#tabs-7" aria-controls="tabs-7" role="tab">
                             Movement
                         </button>
