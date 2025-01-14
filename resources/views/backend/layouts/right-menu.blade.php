@@ -3,7 +3,7 @@
         <!-- Profile Link -->
         <a href="#" type="button" class="flex flex-col items-center gap-1">
             <img src="{{ asset('assets/images/users/avatar-6.jpg') }}" alt="user-image" class="rounded-full h-8 w-8">
-            <span class="font-medium text-base">Jamie D.</span>
+            <span class="font-medium text-base">Umar Rahi</span>
             <span class="text-sm">Admin</span>
         </a>
 
