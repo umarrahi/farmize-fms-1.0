@@ -21,3 +21,12 @@ Route::get('calender', function () {
 Route::get('contacts', function () {
     return view('backend.contacts');
 });
+
+// Livestock
+Route::get('livestock', function () {
+    return view('backend.livestock');
+});
+
+Route::get('livestock/add', function () {
+    return view('backend.livestock-add');
+});

@@ -32,7 +32,7 @@
                             <input type="text" class="form-input w-auto" name="search" placeholder="Search here...">
                         </form>
                     </div>
-                    <a href="{{ url('livestock/add') }}" class="py-2 px-4 inline-flex justify-center items-center gap-2 border font-medium border-transparent bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm">
+                    <a href="{{ url('lived/add') }}" class="py-2 px-4 inline-flex justify-center items-center gap-2 border font-medium border-transparent bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm">
                         <span><i class="uil uil-plus"></i></span>
                         <span>Add Livestock</span>
                     </a>

@@ -10,6 +10,7 @@
     <!--- Menu -->
     <div data-simplebar>
         <ul class="menu">
+            <!-- Dashboard -->
             <li class="menu-item">
                 <a href="{{ url('/') }}" class="menu-link">
                     <span class="menu-icon"><i class="uil uil-estate"></i></span>
@@ -38,6 +39,14 @@
                 <a href="{{ url('contacts') }}" class="menu-link">
                     <span class="menu-icon"><i class="uil uil-user-square"></i></span>
                     <span class="menu-text">Contacts</span>  
+                </a>
+            </li>
+
+            <!-- Livestock -->
+            <li class="menu-item">
+                <a href="{{ url('livestock') }}" class="menu-link">
+                    <span class="menu-icon"><i class="uil uil-user-arrows"></i></span>
+                    <span class="menu-text">Livestock</span>  
                 </a>
             </li>
 
