@@ -114,7 +114,7 @@
                 </div>
                 <!-- end card -->
             </div>
-
+         
             {{-- Modal Box (START) --}}
             <div id="hs-slide-up-animation-modal"
                 class="hs-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto h-[calc(100%-1rem)] max-h-full">

@@ -1,7 +1,7 @@
 @extends('backend.layouts.app')
 
 @section('title')
-    Animals - Farmize Management System
+    Calendar - Farmize Management System
 @endsection
 
 @section('content')
@@ -9,7 +9,7 @@
     <div class="app-content">
 
         <!-- Top Bar -->
-        @include('backend.layouts.topbar', ['title' => 'Animals List'])
+        @include('backend.layouts.topbar', ['title' => 'Calendar'])
 
         <main class="p-6">
 
@@ -56,53 +56,61 @@
                         </div>
 
                         {{-- Modal Body  --}}
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 overflow-y-auto ">
-                            
-                            <div>
-                                <label
-                                    class="text-gray-800 text-sm font-medium inline-block mb-2">Task Name</label>
-                                <input type="text" name="" id="" value="" placeholder="Enter task" class="form-input">
+                        <div class="p-4 overflow-y-auto">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label
+                                        class="text-gray-800 text-sm font-medium inline-block mb-2">Task Name</label>
+                                    <input type="text" name="" id="" value="" placeholder="Enter task" class="form-input">
+                                </div>
+                                <div>
+                                    <label class="text-gray-800 text-sm font-medium inline-block mb-2">Assginee</label>
+                                    <select id="" name="" required
+                                        class="form-select cursor-pointer">
+                                        <option value="">Not Assign</option>
+                                        <option value="">Assign 1</option>
+                                        <option value="">Assign 2</option>ٖ
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="text-gray-800 text-sm font-medium inline-block mb-2">Due Date</label>
+                                    <input type="datetime-local" name="" id="" value="" class="form-input">
+                                </div>
+                                <div>
+                                    <label class="text-gray-800 text-sm font-medium inline-block mb-2">Category</label>
+                                    <select id="" name="" required
+                                        class="form-select cursor-pointer">
+                                        <option value="">No category</option>
+                                        <option value="">Category 1</option>
+                                        <option value="">Category 2</option>ٖ
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="text-gray-800 text-sm font-medium inline-block mb-2">Location</label>
+                                    <select id="" name="" required
+                                        class="form-select cursor-pointer">
+                                        <option value="">No location</option>
+                                        <option value="">location 1</option>
+                                        <option value="">location 2</option>ٖ
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="text-gray-800 text-sm font-medium inline-block mb-2">Priority*</label>
+                                    <select id="" name="" required
+                                        class="form-select cursor-pointer">
+                                        <option value="">Select option</option>
+                                        <option value="">Medium</option>
+                                        <option value="">Large</option>ٖ
+                                    </select>
+                                </div>
                             </div>
-                            <div>
-                                <label class="text-gray-800 text-sm font-medium inline-block mb-2">Assginee</label>
-                                <select id="" name="" required
-                                    class="form-select cursor-pointer">
-                                    <option value="">Not Assign</option>
-                                    <option value="">Assign 1</option>
-                                    <option value="">Assign 2</option>ٖ
-                                </select>
+                            <div class="grid grid-cols-1">
+                                <div>
+                                    <label class="text-gray-800 text-sm font-medium inline-block mb-2">Notes/Remarks</label>
+                                    <textarea rows="4" name="" placeholder="Enter any additional notes or remarks" class="form-textarea ltr:rounded-l-none rtl:rounded-r-none"></textarea>
+                                </div>
                             </div>
-                            <div>
-                                <label class="text-gray-800 text-sm font-medium inline-block mb-2">Due Date</label>
-                                <input type="datetime-local" name="" id="" value="" class="form-input">
-                            </div>
-                            <div>
-                                <label class="text-gray-800 text-sm font-medium inline-block mb-2">Category</label>
-                                <select id="" name="" required
-                                    class="form-select cursor-pointer">
-                                    <option value="">No category</option>
-                                    <option value="">Category 1</option>
-                                    <option value="">Category 2</option>ٖ
-                                </select>
-                            </div>
-                            <div>
-                                <label class="text-gray-800 text-sm font-medium inline-block mb-2">Location</label>
-                                <select id="" name="" required
-                                    class="form-select cursor-pointer">
-                                    <option value="">No location</option>
-                                    <option value="">location 1</option>
-                                    <option value="">location 2</option>ٖ
-                                </select>
-                            </div>
-                            <div>
-                                <label class="text-gray-800 text-sm font-medium inline-block mb-2">Priority*</label>
-                                <select id="" name="" required
-                                    class="form-select cursor-pointer">
-                                    <option value="">Select option</option>
-                                    <option value="">Medium</option>
-                                    <option value="">Large</option>ٖ
-                                </select>
-                            </div>
+
                         </div>
 
                           {{-- Modal Footer  --}}
