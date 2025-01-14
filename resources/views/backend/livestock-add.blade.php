@@ -196,6 +196,7 @@
                                     </div>
                                 </div>
 
+                                <hr>
 
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
@@ -243,8 +244,8 @@
                                         </select>
                                     </div>
                                     <div>
-                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Zip</label>
-                                        <input type="text" name="" id="" placeholder="Enter zip code" class="form-input shadow-sm">
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">State</label>
+                                        <input type="text" name="" id="" placeholder="Enter state" class="form-input shadow-sm">
                                     </div>
                                 </div>
 
