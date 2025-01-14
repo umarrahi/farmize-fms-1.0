@@ -212,7 +212,7 @@
                                         <input type="text" name="" id="" placeholder="Enter supplier name" class="form-input shadow-sm">
                                     </div>
                                 </div>
-                                
+
                                 <div class="grid grid-cols-1 gap-6">
                                     <div>
                                         <label class="text-gray-800 text-sm font-medium inline-block mb-2">Address</label>
@@ -220,10 +220,31 @@
                                     </div>
                                 </div>
 
-                                <div class="grid grid-cols-1 gap-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
-                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Description</label>
-                                        <textarea rows="4" name="" placeholder="Write description here..." class="form-textarea ltr:rounded-l-none rtl:rounded-r-none"></textarea>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Town</label>
+                                        <input type="text" name="" id="" placeholder="Enter town" class="form-input shadow-sm">
+                                    </div>
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Zip</label>
+                                        <input type="text" name="" id="" placeholder="Enter zip code" class="form-input shadow-sm">
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Country</label>
+                                        <select id="" name="" required
+                                            class="form-select cursor-pointer shadow-sm">
+                                            <option value="">Select country</option>
+                                            <option value="1">Pakistan</option>
+                                            <option value="2">India</option>ٖ
+                                            <option value="3">Turkey</option>ٖ
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Zip</label>
+                                        <input type="text" name="" id="" placeholder="Enter zip code" class="form-input shadow-sm">
                                     </div>
                                 </div>
 
