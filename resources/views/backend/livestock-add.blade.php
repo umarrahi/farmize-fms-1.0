@@ -15,204 +15,246 @@
 
             <div class="card border-none">
                 <div class="card-header">
-                    <h4 class="card-title text-primary ">Animal Details</h4>
+                    <h4 class="card-title text-primary ">New Livestock Treatment Inventory Details</h4>
                 </div>
                 <div class="card-body p-6">
                     <form action="#" class="space-y-5">
-                        <!-- Animal Details  Section -->
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            <!-- Species -->
-                            <div>
-                                <label class="text-gray-800 text-sm font-medium inline-block mb-2">Species
-                                    *</label>
-                                <div class="flex items-center gap-2">
-                                    <div class="form-check">
-                                        <input type="radio" class="form-radio text-primary" name="formRadio"
-                                            id="formRadio01" checked="">
-                                        <label class="ml-2" for="formRadio01">Cattle</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input type="radio" class="form-radio text-primary" name="formRadio"
-                                            id="formRadio02">
-                                        <label class="ml-2" for="formRadio02">Sheep</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Breed -->
-                            <div>
-                                <label for="breed"
-                                    class="text-gray-800 text-sm font-medium inline-block mb-2">Breed</label>
-                                <select id="breed" name="breed" required class="form-select cursor-pointer">
-                                    <option value="">Make a selection</option>
-                                    <option value="breed1">Breed 1</option>
-                                    <option value="breed2">Breed 2</option>ٖ
-                                </select>
-                            </div>
-
-                            <!-- Age Class -->
-                            <div>
-                                <label for="breed" class="text-gray-800 text-sm font-medium inline-block mb-2">Age
-                                    Class</label>
-                                <select id="age-class" name="age-class" required class="form-select cursor-pointer">
-                                    <option value="">Make a selection</option>
-                                    <option value="young">Young</option>
-                                    <option value="adult">Adult</option>
-                                </select>
-                            </div>
-
-                            <!-- Date of Birth -->
-                            <div>
-                                <label for="" class="text-gray-800 text-sm font-medium inline-block mb-2">Date of
-                                    Birth *</label>
-                                <p class="mb-2">Select a day, month, or year of birth for your animal.</p>
-                                <div class="flex items-center gap-2 mb-2">
-                                    <label><input type="radio" name="dob-option"
-                                            class="form-radio text-primary value="day"> Day</label>
-                                    <label><input type="radio" name="dob-option"
-                                            class="form-radio text-primary value="month"> Month</label>
-                                    <label><input type="radio" name="dob-option"
-                                            class="form-radio text-primary value="year" checked>
-                                        Year</label>
-                                    <label><input type="radio" name="dob-option"
-                                            class="form-radio text-primary value="not-track"> Do not
-                                        track</label>
-                                </div>
-                                <input type="date" name="dob" id="dob" class="form-input">
-                            </div>
-
-                            <!-- Hide Color -->
-                            <div>
-                                <label for="hide-color" class="text-gray-800 text-sm font-medium inline-block mb-2">Hide
-                                    Color</label>
-                                <select id="hide-color" name="hide-color" required class="form-select cursor-pointer">
-                                    <option value="">Make a selection</option>
-                                    <option value="color1">Color 1</option>
-                                    <option value="color2">Color 2</option>
-                                </select>
-                            </div>
-
-                        </div>
-
-                        <!-- Identification Section -->
+                        <!-- Details Section -->
                         <div class="card">
                             <div class="card-header bg-slate-200">
-                                <h5 class="card-title text-blue-950 ">Identification</h5>
+                                <h5 class="card-title text-blue-950 ">Details</h5>
                             </div>
                             <div class="card-body p-6">
                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                                    <!-- Name -->
+
                                     <div>
-                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Name</label>
-                                        <input type="text" id="" placeholder="Name" class="form-input">
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Type*</label>
+                                        <select id="" name="" required
+                                            class="form-select cursor-pointer shadow-sm">
+                                            <option value="">Select type</option>
+                                            <option value="1">Vaccine 1</option>
+                                            <option value="2">Vaccine 2</option>ٖ
+                                        </select>
                                     </div>
-                                    <!-- Tatto -->
                                     <div>
-                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Tatto</label>
-                                        <input type="text" id="" placeholder="Tatto" class="form-input">
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Title*</label>
+                                        <select id="" name="" required
+                                            class="form-select cursor-pointer shadow-sm">
+                                            <option value="">Select option</option>
+                                            <option value="1">Product 1</option>
+                                            <option value="2">Product 2</option>
+                                        </select>
                                     </div>
-                                    <!-- Brand -->
                                     <div>
-                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Brand</label>
-                                        <input type="text" id="" placeholder="Brand" class="form-input">
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Container
+                                            Unit</label>
+                                        <select id="" name="" class="form-select cursor-pointer">
+                                            <option value="">Select unit</option>
+                                            <option value="1">Liter</option>
+                                            <option value="2">Milliliters</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Container Size
+                                            *</label>
+                                        <div class="flex rounded-md shadow-sm -space-x-px">
+                                            <input type="number" class="form-input rounded-s">
+                                            <span
+                                                class="px-4 inline-flex items-center rounded rounded-s-none border border-gray-200 bg-gray-50 text-sm text-gray-500">
+                                                L
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Withholding -
+                                            Meat *</label>
+                                        <div class="flex rounded-md shadow-sm -space-x-px">
+                                            <input type="text" class="form-input rounded-s">
+                                            <span
+                                                class="px-4 inline-flex items-center rounded rounded-s-none border border-gray-200 bg-gray-50 text-sm text-gray-500">
+                                                Days
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Withholding -
+                                            ESI</label>
+                                        <div class="flex rounded-md shadow-sm -space-x-px">
+                                            <input type="text" class="form-input rounded-s">
+                                            <span
+                                                class="px-4 inline-flex items-center rounded rounded-s-none border border-gray-200 bg-gray-50 text-sm text-gray-500">
+                                                Days
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Dosage</label>
+                                        <div class="flex rounded-md shadow-sm -space-x-px">
+                                            <input type="text" class="form-input rounded-s">
+                                            <span
+                                                class="px-4 inline-flex items-center rounded rounded-s-none border border-gray-200 bg-gray-50 text-sm text-gray-500">
+                                                ml
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Dosage Rate
+                                            *</label>
+                                        <select id="" name="" class="form-select cursor-pointer">
+                                            <option value="">Select rate</option>
+                                            <option value="1">Per head</option>
+                                            <option value="2">Per head 2</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Cost Per
+                                            Container</label>
+                                        <div class="flex rounded-md shadow-sm -space-x-px">
+                                            <span
+                                                class="px-4 inline-flex items-center rounded-s border border-gray-200 bg-gray-50 text-sm text-gray-500">$</span>
+                                            <input type="text" class="form-input rounded-s">
+                                            <span
+                                                class="px-6 inline-flex items-center rounded rounded-s-none border border-gray-200 bg-gray-50 text-sm text-gray-500">
+                                                /Container
+                                            </span>
+                                        </div>
                                     </div>
 
                                 </div>
+
                             </div>
                         </div>
 
-                        <!-- Percentage Section -->
+                        <!-- Container Details Section -->
                         <div class="card">
                             <div class="card-header bg-slate-200">
-                                <h5 class="card-title text-blue-950 ">Percentage</h5>
+                                <h5 class="card-title text-blue-950 ">Container Details</h5>
                             </div>
                             <div class="card-body p-6">
                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                                    <!-- Dam -->
+
                                     <div>
-                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Dam</label>
-                                        <div class="flex items-center gap-4 mb-3">
-                                            <label class="flex items-center gap-2 text-gray-700">
-                                                <input type="radio" name="dam" value="list"
-                                                    class="form-radio text-primary">
-                                                Select from individuals list
-                                            </label>
-                                            <label class="flex items-center gap-2 text-gray-700">
-                                                <input type="radio" name="dam" value="manual"
-                                                    class="form-radio text-primary" checked>
-                                                Manual entry
-                                            </label>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Remaining</label>
+                                        <div class="flex rounded-md shadow-sm -space-x-px">
+                                            <input type="number" class="form-input rounded-s">
+                                            <span
+                                                class="px-4 inline-flex items-center rounded rounded-s-none border border-gray-200 bg-gray-50 text-sm text-gray-500">
+                                                L
+                                            </span>
                                         </div>
-                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                            <div>
-                                                <label class="text-gray-800 text-sm font-medium inline-block mb-2">Visual
-                                                    ID</label>
-                                                <input type="text" id="visualID" placeholder="Visual ID"
-                                                    class="form-input">
-                                            </div>
-                                            <div>
-                                                <label
-                                                    class="text-gray-800 text-sm font-medium inline-block mb-2">Name</label>
-                                                <input type="text" id="name" placeholder="Name"
-                                                    class="form-input">
-                                            </div>
+                                    </div>
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Remaining Accurate As of Date *</label>
+                                        <p class="mb-2">Select a day, month, or year of birth for your animal.</p>
+                                        <input type="date" name="dob" id="dob" class="form-input">
+                                    </div>
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Type*</label>
+                                        <select id="" name="" required
+                                            class="form-select cursor-pointer shadow-sm">
+                                            <option value="">Select type</option>
+                                            <option value="1">Vaccine 1</option>
+                                            <option value="2">Vaccine 2</option>ٖ
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Title*</label>
+                                        <select id="" name="" required
+                                            class="form-select cursor-pointer shadow-sm">
+                                            <option value="">Select option</option>
+                                            <option value="1">Product 1</option>
+                                            <option value="2">Product 2</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Container
+                                            Unit</label>
+                                        <select id="" name="" class="form-select cursor-pointer">
+                                            <option value="">Select unit</option>
+                                            <option value="1">Liter</option>
+                                            <option value="2">Milliliters</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Withholding -
+                                            Meat *</label>
+                                        <div class="flex rounded-md shadow-sm -space-x-px">
+                                            <input type="text" class="form-input rounded-s">
+                                            <span
+                                                class="px-4 inline-flex items-center rounded rounded-s-none border border-gray-200 bg-gray-50 text-sm text-gray-500">
+                                                Days
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Withholding -
+                                            ESI</label>
+                                        <div class="flex rounded-md shadow-sm -space-x-px">
+                                            <input type="text" class="form-input rounded-s">
+                                            <span
+                                                class="px-4 inline-flex items-center rounded rounded-s-none border border-gray-200 bg-gray-50 text-sm text-gray-500">
+                                                Days
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Dosage</label>
+                                        <div class="flex rounded-md shadow-sm -space-x-px">
+                                            <input type="text" class="form-input rounded-s">
+                                            <span
+                                                class="px-4 inline-flex items-center rounded rounded-s-none border border-gray-200 bg-gray-50 text-sm text-gray-500">
+                                                ml
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Dosage Rate
+                                            *</label>
+                                        <select id="" name="" class="form-select cursor-pointer">
+                                            <option value="">Select rate</option>
+                                            <option value="1">Per head</option>
+                                            <option value="2">Per head 2</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="text-gray-800 text-sm font-medium inline-block mb-2">Cost Per
+                                            Container</label>
+                                        <div class="flex rounded-md shadow-sm -space-x-px">
+                                            <span
+                                                class="px-4 inline-flex items-center rounded-s border border-gray-200 bg-gray-50 text-sm text-gray-500">$</span>
+                                            <input type="text" class="form-input rounded-s">
+                                            <span
+                                                class="px-6 inline-flex items-center rounded rounded-s-none border border-gray-200 bg-gray-50 text-sm text-gray-500">
+                                                /Container
+                                            </span>
                                         </div>
                                     </div>
 
-                                    <!-- Surrogate -->
-                                    <div>
-                                        <label
-                                            class="text-gray-800 text-sm font-medium inline-block mb-2">Surrogate</label>
-                                        <div class="flex items-center gap-4 mb-3">
-                                            <label class="flex items-center gap-2 text-gray-700">
-                                                <input type="radio" name="surrogate" value="list"
-                                                    class="form-radio text-primary">
-                                                Select from individuals list
-                                            </label>
-                                            <label class="flex items-center gap-2 text-gray-700">
-                                                <input type="radio" name="surrogate" value="manual"
-                                                    class="form-radio text-primary">
-                                                Manual entry
-                                            </label>
-                                        </div>
-                                        <button type="button"
-                                            class="btn border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 px-4 py-2 rounded-md text-sm">
-                                            Select from individuals list
-                                        </button>
-                                    </div>
-
-                                    <!-- Sire -->
-                                    <div>
-                                        <h3 class="text-sm font-medium mb-2">Sire</h3>
-                                        <div class="flex items-center gap-4 mb-3">
-                                            <label class="flex items-center gap-2 text-gray-700">
-                                                <input type="radio" name="sire" value="list"
-                                                    class="form-radio text-primary">
-                                                Select from individuals list
-                                            </label>
-                                            <label class="flex items-center gap-2 text-gray-700">
-                                                <input type="radio" name="sire" value="manual"
-                                                    class="form-radio text-primary">
-                                                Manual entry
-                                            </label>
-                                        </div>
-                                        <button type="button"
-                                            class="btn border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 px-4 py-2 rounded-md text-sm">
-                                            Select from individuals list
-                                        </button>
-                                    </div>
                                 </div>
+
                             </div>
                         </div>
+
 
                         <!-- Save Button -->
-                        <div class="mt-5">
-                            <button type="submit" class="btn bg-primary text-white">Save</button>
+                        <div class="mt-5 flex item-center gap-3">
+                            <button type="submit"
+                                class="py-2 px-4 inline-flex justify-center items-center gap-2 border font-medium border-transparent bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm">
+                                Add
+                            </button>
+                            <a class="py-2 px-4 inline-flex justify-center items-center gap-2 border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm"
+                                href="{{ url('livestock') }}">
+                                Cancel
+                            </a>
                         </div>
                     </form>
-
                 </div>
+
+
+
             </div>
+
             <!-- end card -->
 
         </main>
